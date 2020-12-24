@@ -1,3 +1,5 @@
+include("../roblib.jl")
+
 function mark_it_all(r::Robot)
     numsteps_hor = get_num_movements!(r, Left)
     numsteps_vert = get_num_movements!(r, Down)
