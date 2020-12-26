@@ -16,7 +16,7 @@ function mark_it_all(r::Robot)
     
     movements!(r, Down) # перемещаемся в юго-западный
     back(r, Up, numsteps_vert) # возвращаемся в начальную точку
-    back(r, Down, numsteps_hor)
+    back(r, Right, numsteps_hor)
 end
 
 function putmark(r::Robot, side::HorizonSide)
